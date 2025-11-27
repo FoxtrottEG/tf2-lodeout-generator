@@ -1,5 +1,3 @@
-# upgrades primary
-
 SCOPES = [
     "Holographic Sight",
     "HCOG Sight",
@@ -21,6 +19,19 @@ UPGRADES = [
     "Gunrunner",
     "Quick Swap",
     "Extra Ammo"
+]
+
+SECONDARY_UPGRADES = [
+    "Extended Magazine",
+    "Speedloader",
+    "Quick Swap",
+    "Extra Ammo"
+]
+
+AT_UPGRADES = [
+    "Extra Ammo",
+    "Speedloader",
+    "Quick Swap"
 ]
 
 PR_WEAPON = {
@@ -112,15 +123,82 @@ PR_WEAPON = {
         "upgrades": UPGRADES
     },
 }
-# soon to be sidearm dick
-SE_WEAPON = [
-    'sweapon1',
-    'sweapon2',
-    'sweapon3'
+
+SA_WEAPON = {
+    "RE-45 Auto Pistol": {
+        "upgrades": SECONDARY_UPGRADES
+    },
+    "P2016": {
+        "upgrades": SECONDARY_UPGRADES
+    },
+    "Mozambique Shotgun": {
+        "upgrades": SECONDARY_UPGRADES
+    },
+    "Wingman": {
+        "upgrades": SECONDARY_UPGRADES
+    },
+    "B3 Wingman Elite": {
+        "upgrades": SECONDARY_UPGRADES
+    }
+}
+
+AT_WEAPON = {
+    "MGL Mag Launcher": {
+        "upgrades": AT_UPGRADES + ["Extended Magazine"]
+    },
+    "Thunderbolt": {
+        "upgrades": AT_UPGRADES
+    },
+    "Charge Rifle": {
+        "upgrades": AT_UPGRADES + ["Extended Battery", "Charge Hack"]
+    },
+    "Archer Heavy Rocket": {
+        "upgrades": AT_UPGRADES
+    }
+}
+
+TACTICAL = [
+    "Grapple",
+    "Cloak",
+    "Stim",
+    "Holo",
+    "A-Wall",
+    "Pulse Blade"
 ]
-# soon to be at guns dick
-AT_WEAPON = [
-    'atweapon1',
-    'atweapon2',
-    'atweapon3'
+
+BOOSTS = [
+    "Amped Weapons",
+    "Ticks",
+    "Smart Pistol MK6",
+    "Pilot Sentry",
+    "Titan Sentry",
+    "Battery Back-up",
+    "Map Hack",
+    "Radar Jammer",
+    "Phase Rewind",
+    "Hard Cover",
+    "Holo Pilot Nova",
+    "Dice Roll"
+]
+
+ORDINANCE = [
+    "Frag Granade",
+    "ARC Granade",
+    "Satchel",
+    "Fire Star",
+    "Gravity Star"
+]
+
+KIT1 = [
+    "Power Cell",
+    "Phase Embark",
+    "Ordinance Expert",
+    "Fast Heal"
+]
+KIT2 = [
+    "Wallhang",
+    "Kill report",
+    "Low Profile",
+    "Hover",
+    "Titan Hunter"
 ]
