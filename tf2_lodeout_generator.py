@@ -1,49 +1,19 @@
 import random
+from db_tf2_lodeout_picker import (PR_WEAPON, SE_WEAPON, AT_WEAPON,)
 
-# list of weapons
+PR_WEAPONS_NAMES = list(PR_WEAPON.keys())
+prw = random.choice(PR_WEAPONS_NAMES)
 
-pr_weapon = ['kraber',]
-se_weapon = ['sweapon1', 'sweapon2', 'sweapon3']
-at_weapon = ['atweapon1', 'atweapon2', 'atweapon3']
+PR_WEAPONS_DETAILS = (PR_WEAPON[prw])
+SCOPE_List = PR_WEAPONS_DETAILS['scopes']
+prw_sc = random.choice(SCOPE_List)
 
-# common upgrades
+PR_WEAPONS_DETAILS = (PR_WEAPON[prw])
+UPGRADES_List = PR_WEAPONS_DETAILS['upgrades']
+prw_up1 = random.choice(UPGRADES_List)
+UPGRADES_List.remove(prw_up1)
 
-COMMON_SCOPES = [
-    "Holographic Sight",
-    "HCOG Sight",
-    "Threat Scope (Digital/Thermal)",
-    "AOG Scope (Mid-range)",
-    "Default Iron Sights"
-]
+UPGRADES_List = PR_WEAPONS_DETAILS['upgrades']
+prw_up2 = random.choice(UPGRADES_List)
 
-COMMON_SNIPER_SCOPES = [
-    "Variable Zoom Scope",
-    "HCOG Sight",
-    "Threat Scope (Digital/Thermal)",
-    "Default Iron Sights"
-]
-
-COMMON_UPGRADES_MODS = [
-    "Extended Magazine",
-    "Speedloader",
-    "Gunrunner (Movement while Aiming)",
-    "Quick Swap",
-    "Extra Ammo"
-]
-
-prw = random.choice(pr_weapon)
-
-if prw == 'kraber':
-    prw_sc = random.choice(COMMON_SNIPER_SCOPES)
-    prw_up1 = random.choice(COMMON_UPGRADES_MODS)
-    COMMON_UPGRADES_MODS.remove(prw_up1)
-    prw_up2 = random.choice(COMMON_UPGRADES_MODS)
-
-
-print(f"This is your primary weapon {prw} using {prw_sc}, {prw_up1} and {prw_up2}")
-
-sew = random.choice(se_weapon)
-print(f"This is your secoundary weapon {sew}")
-
-atw = random.choice(at_weapon)
-print(f"This is your Anti-titant weapon {atw}")
+print(f"This is your primary weapon {prw} using the {prw_sc} scope and these two upgrades {prw_up1}, {prw_up2}!!!")
