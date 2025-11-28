@@ -34,6 +34,20 @@ AT_UPGRADES = [
     "Quick Swap"
 ]
 
+TITANFALL_KIT = [
+    "Dome Shield",
+    "Warpfall"
+]
+
+TITAN_KIT = [
+    "Assault Chip",
+    "Stealth Auto-Eject",
+    "Turbo Engine",
+    "Overcore",
+    "Nuclear Eject",
+    "Counter Ready"
+]
+
 PR_WEAPON = {
     # ar
     "R-201 Carbine": {
@@ -202,3 +216,44 @@ KIT2 = [
     "Hover",
     "Titan Hunter"
 ]
+
+TITANS = {
+    "Ion": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Entangled Energy", "Zero-Point Tripwire", "Vortex", "Amplifier", "Grand Cannon", "Refraction Lens"]
+        },
+    "Scorch": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Wildfire Laucher", "Tempted Plating", "Inferno shield", "Fuel the Fire", "Scorched Earth"],
+        },
+    "Northstar": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Piercing Shot", "Enhanced Payload", "Twin Traps", "Viper Thrusters", "Threat Optics"],
+        },
+    "Ronin": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Ricochet Rounds", "Thunderstorm", "Temporal Anomaly", "Highlander", "Phase Reflex"],
+        },
+    "Tone": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Enhanced Tracker Rounds", "Reinforced Partical Wall", "Pulse-Echo", "Rocket Barrage", "Burst Loader"],
+        },
+    "Legion": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Enhanced Ammo Capacity", "Sensor Array", "Bulwark", "Light-Weight Alloys", "Hidden Compartment"],
+        },
+    "Monarch": {
+        "titanfall_kit": TITANFALL_KIT,
+        "titan_kit": TITAN_KIT,
+        "special_kit": ["Shield Amplifier", "Energy Thief", "Survival of the Fittest", "Rapid Rearm"],
+        "monarch_core1": ["Arc Rounds", "Missile Racks", "Energy Transfer"],
+        "monarch_core2": ["Rearm and Reload", "Maelstron", "Energy Field"],
+        "monarch_core3": ["Multi-Target Missile System", "Superior Chassis", "XO-16 Accelerator"],
+    }
+}
