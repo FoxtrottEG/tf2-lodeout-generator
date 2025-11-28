@@ -136,6 +136,13 @@ PR_WEAPON = {
         "scopes": SCOPES,
         "upgrades": UPGRADES
     },
+    #pistols
+    #"Mozambique Shotgun": {
+    #    "upgrades": SECONDARY_UPGRADES
+    #},
+    #"Wingman": {
+    #    "upgrades": SECONDARY_UPGRADES
+    #}
 }
 
 SA_WEAPON = {
@@ -143,12 +150,6 @@ SA_WEAPON = {
         "upgrades": SECONDARY_UPGRADES
     },
     "P2016": {
-        "upgrades": SECONDARY_UPGRADES
-    },
-    "Mozambique Shotgun": {
-        "upgrades": SECONDARY_UPGRADES
-    },
-    "Wingman": {
         "upgrades": SECONDARY_UPGRADES
     },
     "B3 Wingman Elite": {
